@@ -9,8 +9,10 @@ public class UI
     Scanner scanner;
 
     public UI() {
-        scanner = new Scanner(System.in);   
-        // Utility methods
+        scanner = new Scanner(System.in);         
+    }
+    
+    // Utility methods
     public String getXOrO(int whoseMove) {
         return (whoseMove == -1) ? "X" : "O";
     }
@@ -96,10 +98,5 @@ public class UI
         System.out.println(Constants.TIE_GAME);
     }
 }
-
-    }
-}
-
-    
 
 

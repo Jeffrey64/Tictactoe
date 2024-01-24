@@ -27,7 +27,7 @@ public class State
 
     private String xName = "";
 
-    public String getxName() {
+    public String getXName() {
         return this.xName;
     }
 
@@ -37,7 +37,7 @@ public class State
 
     private String oName = "";
 
-    public String oName() {
+    public String getOName() {
         return this.oName;
     }
     
