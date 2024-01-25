@@ -31,7 +31,7 @@ public class State
         return this.xName;
     }
 
-    public void setxName(String xName) {
+    public void setXName(String xName) {
         this.xName = xName;
     }
 
@@ -41,7 +41,7 @@ public class State
         return this.oName;
     }
     
-    public void setoName(String oName) {
+    public void setOName(String oName) {
         this.oName = oName;
     }
 
@@ -56,10 +56,18 @@ public class State
     
     public boolean isWinner() {
         // You will write this code!!
+        return true;
     }
 
     public boolean isTie() {
-        // You will write this code too!!
+        for (int row = 0; row<Constants.BOARD_SIZE; row++) {
+            for (int col=0; col<Constants.BOARD_SIZE; col++) {
+                if (getBoardCell(row,col) == Constants.BLANK) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
 
